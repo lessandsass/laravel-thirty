@@ -6,8 +6,13 @@
     <title>Laravel Thirty - Contact Page</title>
 </head>
 <body>
-    <h2>
-        Contact page
-    </h2>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+    </nav>
+
+    {{ $slot }}
 </body>
 </html>
