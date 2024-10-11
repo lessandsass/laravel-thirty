@@ -59,8 +59,8 @@
                     </x-nav-link>
 
                     <x-nav-link
-                        href="/contact"
                         :active="request()->is('contact')"
+                        type="button"
                     >
                         Contact
                     </x-nav-link>
