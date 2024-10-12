@@ -52,10 +52,10 @@
                     </x-nav-link>
 
                     <x-nav-link
-                        href="/about"
-                        :active="request()->is('about')"
+                        href="/jobs"
+                        :active="request()->is('jobs')"
                     >
-                        About
+                        Jobs
                     </x-nav-link>
 
                     <x-nav-link
