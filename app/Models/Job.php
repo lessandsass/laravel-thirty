@@ -15,5 +15,16 @@ class Job extends Model{
         'title',
         'salary'
     ];
+
+    public function employer(){
+        return $this->belongsTo(Employer::class);
+    }
+
+    
+
+
+
+
+
 }
 
