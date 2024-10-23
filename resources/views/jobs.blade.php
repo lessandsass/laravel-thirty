@@ -4,16 +4,19 @@
         Job Listings
     </x-slot:heading>
 
-    <ul>
+    <div class="space-y-4">
         @foreach ($jobs as $job)
-            <li>
-                <a href="/jobs/{{ $job['id'] }}">
-                    <span class="text-xl text-blue-500">{{ $job['title'] }}</span> : pays
+            <a href="/jobs/{{ $job['id'] }}" class="px-4 py-6 block border-2 border-gray-300 bg-gray-100 rounded-lg">
+                <div class="text-blue-500 font-bold">
+                    {{ $job->employer->name }}
+                </div>
+                <div>
+                    <span class="text-xl">{{ $job['title'] }}</span> : pays
                     {{ $job['salary'] }} per year.
-                </a>
-            </li>
+                </div>
+            </a>
         @endforeach
-    </ul>
+    </div>
 
 </x-layout>
 
